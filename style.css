@@ -1,0 +1,214 @@
+body {
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+html {
+  border-radius: 3px;
+}
+
+div#title_bar {
+  position: fixed;
+  top: 2px;
+  margin-left: 230px;
+  margin-right: 143px;
+  z-index: 10;
+  width: calc(100% - 373px);
+  height: 30px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -webkit-app-region: drag;
+  background-color: #e7e7e7;
+}
+
+.dataTables_filter {
+  width: 0px;
+  height: 0px;
+}
+
+.dataTables_length {
+  width: 0px;
+  height: 0px;
+}
+
+div#page-content {
+  position: fixed;
+  top: 43px;
+  overflow: scroll;
+  width: 100%;
+  height: calc(100% - 80px);
+  padding: 0px 1px 0px 13px;
+}
+
+div#userdata_info {
+  position: fixed;
+  bottom: 2px;
+  left: 15px;
+  z-index: 11;
+  padding: 7px;
+  background-color: #e7e7e7;
+  border-radius: 2px;
+}
+
+div#active-user-info {
+  position: fixed;
+  bottom: 2px;
+  left: calc(50% - 100px);
+  height: 33px;
+  z-index: 11;
+  padding: 7px;
+  background-color: #e7e7e7;
+  border-radius: 2px;
+}
+
+div#userdata_paginate {
+  position: fixed;
+  bottom: 2px;
+  right: 15px;
+  z-index: 11;
+}
+
+div#userdata_wrapper {
+  padding: 0px;
+  top: 0px;
+}
+
+.alertify {
+  color: #000;
+}
+
+td {
+  white-space: nowrap;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.dataTables_filter input {
+  display: inline;
+  position: fixed;
+  left: 15px;
+  top: 2px;
+  z-index: 11;
+  border-radius: 2px !important;
+  -webkit-app-region: no-drag;
+  background-color: #e7e7e7;
+}
+
+select {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 2px;
+  right: 90px;
+  border: none;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  height: 30px;
+  z-index: 11;
+  background-color: #e7e7e7;
+}
+
+.btn {
+  border-width: 0;
+  color: #4DC3FA;
+  text-decoration: none;
+  padding: 4px 10px;
+  line-height: 1.5;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: 700;
+  margin: 0px 0px 0px 0;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #afafaf;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #fff;
+}
+
+.wc-box {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 14;
+}
+
+.wc-box div {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.wc-box div:before, .wc-box div:after {
+  top: 30%;
+  right: 30%;
+  bottom: 30%;
+  left: 30%;
+  content: " ";
+  position: absolute;
+  border-color: #CCCCCC;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+}
+
+.wc-box .minimize:before {
+  border-bottom-width: 2px;
+}
+
+.wc-box .maximize:before {
+  border-width: 1px 1px 2px 1px;
+}
+
+.wc-box .close:before, .wc-box .close:after {
+  bottom: 50%;
+  top: 50%;
+}
+
+.wc-box .close:before {
+  transform: rotate(45deg);
+}
+
+.wc-box .close:after {
+  transform: rotate(-45deg);
+}
+
+.wc-box div:hover {
+  background-color: #CCCCCC;
+}
+
+.wc-box .close:hover {
+  background-color: #E04343;
+}
+
+.wc-box div:hover:after, .wc-box div:hover:before {
+  border-color: #333333;
+}
+
+.wc-box .close:hover:after, .wc-box .close:hover:before {
+  border-color: #FFFFFF;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Center</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./node_modules/alertifyjs/build/css/alertify.min.css">
+  <link rel="stylesheet" href="./table-dark.css">
+</head>
+
+<body>
+  <div id="title_bar"></div>
+  <div class="wc-box">
+    <div id="min-btn" class="minimize"></div>
+    <div id="max-btn" class="maximize"></div>
+    <div id="close-btn" class="close"></div>
+  </div>
+  <div id="page-content">
+    <table class="table-hover table-striped table-bordered" id="userdata">
+      <thead>
+        <th>Computer Name</th>
+        <th>User Name</th>
+        <th>IP Address</th>
+        <th>Connect</th>
+        <th>Model</th>
+        <th>OS</th>
+        <th>Connection Time</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+<div id="active-user-info"><label id="active-user-label">0 Active User</label></div>
+  <script src="app.js"></script>
+</body>
+
+</html>

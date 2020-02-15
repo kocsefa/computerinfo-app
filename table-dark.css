@@ -1,0 +1,90 @@
+.dark body {
+    background-color: #1F2739;
+    color: #fff;
+}
+
+.dark select {
+    background: #2C3446;
+    color: #fff;
+}
+
+.dark input {
+    color: #fff;
+    background: #2C3446;
+}
+
+.dark th {
+    /* color: #FB667A; */
+    background-color: #2C3446
+}
+
+.dark div#userdata_info, div#active-user-info {
+    background-color: #2C3446;
+}
+
+.dark div#title_bar {
+    background-color: #2C3446;
+}
+
+.dark .table-hover tbody tr:hover td {
+    color: #fff;
+    background-color: #8ba6ff46
+}
+
+.dark .dataTables_wrapper .dataTables_length, .dark .dataTables_wrapper .dataTables_filter, .dark .dataTables_wrapper .dataTables_info, .dark .dataTables_wrapper .dataTables_processing, .dark .dataTables_wrapper .dataTables_paginate {
+    color: #fff;
+}
+
+.dark .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dark .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff;
+    background-color: #2C3446;
+}
+
+.dark .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #fff;
+    background-color: #323d55;
+}
+
+.dark .table-hover tbody tr:hover td {
+    color: #fff;
+    background-color: #8ba6ff46
+}
+
+.dark td, .dark th, .dark thead th {
+    border-color: #1F2739
+}
+
+.dark tbody tr:nth-of-type(odd) {
+    background-color: #323C50 !important;
+}
+
+.dark tbody tr:nth-of-type(even) {
+    background-color: #2C3446 !important;
+}
+
+.dark .table-bordered {
+    border: 1px solid #1F2739
+}
+
+.dark .table-bordered td, .dark .table-bordered th {
+    border: 1px solid #1F2739
+}
+
+.dark ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: #1F2739;
+}
+
+.dark ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #323C50;
+}
+
+.dark ::-webkit-scrollbar-corner {
+    background-color: #1F2739;
+}
