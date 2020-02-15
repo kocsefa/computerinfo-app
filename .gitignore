@@ -1,3 +1,5 @@
 node_modules/
-Center-win32-x64
+
+Center-win32-x64/
+
 package-lock.json
