@@ -1,5 +1,5 @@
 //Server Address
-const SERVER = 'ServerAddress'
+const SERVER = 'http://172.26.1.48:9292'
 
 const $ = require('jquery')
 const alertify = require('alertifyjs')
@@ -21,13 +21,8 @@ if (parameters.darktheme && parameters.darktheme === 1) {
 //Search için otomatize işlemleri
 //Tüm alfanumerik karakterleri search kutucuğuna yönlendirmek için focus özelliği ile seçim yaptırılıyor
 $(function () {
-  $(document).mousedown(function (e) {
-    if (e.which === 3) {
-      document.execCommand('copy')
-    }
-  })
   $(document).keydown(function (e) {
-    if (e.keyCode >= 48 && e.keyCode <= 111) {
+    if (!e.ctrlKey && e.keyCode >= 48 && e.keyCode <= 111) {
       $('input').focus()
     }
     //ESC tuşu aramayı temizliyor 
@@ -138,6 +133,7 @@ socket.on('update', ({ data }) => {
     }
   })
   dataTable.draw()
+
   let notify = new Notification('Center', {
     body: 'Yeni Oturum Açma İşlemi\n'+
     data.UserName + ' adlı kullanıcı ' + data.ComputerName + ' terminalinde oturum açtı!'
