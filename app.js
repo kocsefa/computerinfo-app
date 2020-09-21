@@ -94,6 +94,18 @@ const dataTable = $('#userdata').DataTable({
   iDisplayLength: parameters.iDisplayLength || 10
 })
 
+notification = (data) => {
+  if (parameters.notification === 1) {
+    let notify = new Notification('Center', {
+      body: 'Yeni Oturum Açma İşlemi\n' +
+        data.UserName + ' adlı kullanıcı ' + data.ComputerName + ' terminalinde oturum açtı!'
+    })
+
+    notify.onclick = () => {
+      console.log('Notification clicked')
+    }
+  }
+}
 
 //Socket İşlemleri
 socket.on('insert', ({ data }) => {
@@ -108,14 +120,7 @@ socket.on('insert', ({ data }) => {
   ]
   dataTable.rows.add([newRow])
   dataTable.draw()
-  let notify = new Notification('Center', {
-    body: 'Yeni Oturum Açma İşlemi\n' +
-      data.UserName + ' adlı kullanıcı ' + data.ComputerName + ' terminalinde oturum açtı!'
-  })
-
-  notify.onclick = () => {
-    console.log('Notification clicked')
-  }
+  notification(data)
 })
 
 socket.on('update', ({ data }) => {
@@ -134,13 +139,7 @@ socket.on('update', ({ data }) => {
   })
   dataTable.draw()
 
-  let notify = new Notification('Center', {
-    body: 'Yeni Oturum Açma İşlemi\n'+
-    data.UserName + ' adlı kullanıcı ' + data.ComputerName + ' terminalinde oturum açtı!'
-  })
-  notify.onclick = () => {
-    console.log('Notification clicked')
-  }
+  notification(data)
 })
 
 socket.on('init', ({ data }) => {
